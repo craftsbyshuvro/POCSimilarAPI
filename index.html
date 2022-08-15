@@ -72,7 +72,7 @@
     function openModal(val){
         var targetApi = all_result.filter(x => x.source_api == val).slice(0,5);
         
-        $("#modalTable").html("<tr> <th>API</th> <th>Score</th> </tr>");
+        $("#modalTable").html("<tr> <th>Similar API</th> <th>Similarity Score</th> </tr>");
         
         $.each(targetApi, function(index, value) {
             var source_api = value.source_api;
